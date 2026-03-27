@@ -10,6 +10,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: 'https://RoberDev96.github.io',
-  base: '/',
+  base: '/PokeApi-Astro',
   integrations: [icon(), solidJs()],
 });
