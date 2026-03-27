@@ -1,0 +1,21 @@
+---
+import MainLayout from "@/Layout/MainLayout.astro";
+import { Counter } from "@components/counter";
+import Title from "@components/shared/title.astro";
+
+const counterValue = 20
+---
+
+<MainLayout title="Isla">
+   <Title>Islas</Title>
+
+<div style={{
+   height: '2000px',
+   backgroundColor: 'red',
+   opacity: 0.4
+}}>
+</div>
+    <Counter 
+    transition:persist = 'counter'
+    client:visible initValue = { counterValue }/>
+</MainLayout>
