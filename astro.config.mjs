@@ -10,5 +10,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: 'https://RoberDev96.github.io',
+  base: '/',
   integrations: [icon(), solidJs()],
 });
