@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Si necesitas redirecciones
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Si tienes variables de entorno
+[context.production.environment]
+  API_URL = "https://tu-api.com"
