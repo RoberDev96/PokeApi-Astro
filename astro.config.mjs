@@ -5,10 +5,17 @@ import icon from "astro-icon";
 import solidJs from "@astrojs/solid-js";
 import vercel from "@astrojs/vercel";
 
+// https://astro.build/config
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-    integrations: [icon(), solidJs()],
-  adapter: vercel(),  
+  
+  output: 'static',  // Tu proyecto es estático
+  integrations: [icon(), solidJs()],
+  adapter: vercel({
+    webAnalytics: {
+      enabled: false,  
+    },
+  }),
 });
