@@ -13,7 +13,6 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "@astrojs/netlify": "^7.0.5",
     "@astrojs/solid-js": "^6.0.1",
     "@astrojs/vercel": "^10.0.4",
     "@tailwindcss/vite": "^4.2.2",
